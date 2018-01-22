@@ -1,0 +1,61 @@
+<html>
+
+<head>
+</head>
+<center>
+<body>
+    <h1>Hola!</h1>
+
+    <script>
+        var greetings = "Howdy!-Ciao!";
+        var array = greetings.split("-")
+        var greetings = Math.random();
+        document.write(array[Math.floor(Math.random() * 2)], "<br>")
+    </script>
+
+
+
+    <script>
+        var today = new Date();
+        var month = today.getMonth();
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        var day = today.getDay();
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        var date = today.getDate();
+
+        var year = today.getFullYear();
+
+        document.write( "Today is ", days[day], " ", months[month], " ", date, " ", year);
+
+        var evenodd = ["even","odd"];
+        var word = day % 2;
+
+        document.write("<br>", " Today is an ", evenodd[word], " day.");
+
+
+        var end = new Date("06/14/2018");
+        var graddays = ((end.getTime() - today.getTime()) / 86400000);
+        var gradhours = (graddays - Math.floor(graddays)) * 24;
+        var gradmins = (gradhours - Math.floor(gradhours)) * 60;
+        document.write("<br>", "Time before the end of school year is ", Math.floor(graddays), " days, ", Math.floor(gradhours), " hours, and ", Math.floor(gradmins), " minutes.", "<br>");
+
+    </script>
+
+
+    <script>
+    var string = "san rafael high school-185 mission ave-san rafael ca 94901"
+    var caps = string.toUpperCase();
+    var place = caps.substr(0, 22);
+    var street = caps.substr(23, 15);
+    var zip = caps.substr(39, 19);
+        document.write(place, "<br>", street, "<br>", zip);
+
+
+    </script>
+
+</body>
+</center>
+</html>
+
