@@ -1,17 +1,21 @@
-function.cube("length, mass, volume, density, surfaceArea") {
-    this.length = 4;
-    this.mass = 2;
-    this.volume = fuction() {
+function Cube(length, mass) {
+    this.length = length;
+    this.mass = mass;
+    this.volume = function() {
+        return (Math.pow(length, 3));
 
     }
 
+    this.density = function() {
+        return (mass / (Math.pow(length, 3)));
+
+    }
+    this.surfacearea = function() {
+
+
+        return (Math.pow((length * 6), 2));
+    }
+
 }
-this.density = function () {
 
-
-}
-this.surfacearea = surfaceArea
-
-
-
-var myCube = new Cube
+var myCube = new Cube(4, 6);
