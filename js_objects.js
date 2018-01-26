@@ -36,6 +36,4 @@ function Person(firstName, lastName) {
 
 
 
-
-
 }
