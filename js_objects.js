@@ -1,16 +1,16 @@
 function Cube(length, mass) {
     this.length = length;
     this.mass = mass;
-    this.volume = function() {
+    this.volume = function () {
         return (Math.pow(length, 3));
 
     }
 
-    this.density = function() {
+    this.density = function () {
         return (mass / (Math.pow(length, 3)));
 
     }
-    this.surfacearea = function() {
+    this.surfacearea = function () {
 
 
         return (Math.pow((length * 6), 2));
@@ -19,3 +19,23 @@ function Cube(length, mass) {
 }
 
 var myCube = new Cube(4, 6);
+
+
+function Person(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.birthdate = birthdate;
+
+    this.sayHi = function () {
+        return
+
+
+
+
+    }
+
+
+
+
+
+}
